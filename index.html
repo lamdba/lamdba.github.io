@@ -1,4 +1,4 @@
-<div style="height:200">
+﻿<div style="height:200">
 </div>
 
 <div style="width:200; margin:20 auto">
@@ -16,8 +16,8 @@ This is my github: <a href="https://github.com/lamdba">https://github.com/lamdba
     var ctx = document.getElementById("myCanvas").getContext("2d");
     var img = new Image(); img.src = "seeright.png";
     var n = 0;  <!-- 20 等分一个直角-->
-    var DTH = Math.PI/2/20;
-    var A = 20;
+    var A = 40;
+    var DTH = Math.PI/2/A
     var ALPHA = Math.PI/4;
     var th1 = -3*ALPHA;
     var th2 = -1*ALPHA;
@@ -37,14 +37,14 @@ This is my github: <a href="https://github.com/lamdba">https://github.com/lamdba
         th2 += DTH;
         th3 += DTH;
         n += 1
-        if (n == 20)
+        if (n == A)
         {
             n = 0;
             th1 = -3*ALPHA;
             th2 = -1*ALPHA;
             th3 = 1*ALPHA;
         }
-        setTimeout(function(){eval(s)},50);
+        setTimeout(function(){eval(s)},30);
     }
     f("f(s)");
 
