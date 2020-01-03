@@ -23,7 +23,7 @@ This is my github: <a href="https://github.com/lamdba">https://github.com/lamdba
     var th2 = -1*ALPHA;
     var th3 = 1*ALPHA;
     var x,y;
-    function f(s)
+    function f()
     {
         ctx.clearRect(0,0,200,200);
 
@@ -44,8 +44,8 @@ This is my github: <a href="https://github.com/lamdba">https://github.com/lamdba
             th2 = -1*ALPHA;
             th3 = 1*ALPHA;
         }
-        setTimeout(function(){eval(s)},30);
+        setTimeout(function(){eval("f()")},30);
     }
-    f("f(s)");
+    f();
 
 </script>
